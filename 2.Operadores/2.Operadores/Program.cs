@@ -5,13 +5,12 @@
         static void Main(string[] args)
         {
             //OPERADORES
-            //Operadores numéricos
-            // Cambio de signo
+            //Operadores númericos 
+            //Cambio de signo
             int num1 = 5;
             int num2 = -num1;
             int num3 = +num2;
             int num4 = -num3;
-
             Console.WriteLine(num1 + "//" + num2 + "//" + num3 + "//" + num4);
 
             //Aritméticos
@@ -23,26 +22,26 @@
             Console.WriteLine(num7);
             //float num8 = (float) 5 / 3;//División
             //float num8 = 5f / 3;
-            //float num8 = 5 / 3f;
+            //float num8 = 5 / 3f; 
             float num8 = 5f / 3f;
             Console.WriteLine(num8);
-            double num9 = 105d / 4;
+            double num9 = 105d / 4; //Variable para decimal varia la precisión
             Console.WriteLine(num9);
-            decimal num10 = 50m / 6;
+            decimal num10 = 50m / 6; //Variable para decimal varia la precisión
             Console.WriteLine(num10);
 
-            //incremento decremento
-            num10++;//num10 = num10 + 1; Incremento
+            //Incremento, decremento 
+            num10++; //num10 = num10 + 1 
             Console.WriteLine(num10);
-            num1--;//num1=num1-1; Decremento
+            num1--; //num1 = num1 - 1 
             Console.WriteLine(num1);
-            num2 += 5;//num2 = num2+5;
+            num2 += 5; //num2 = num2+5; 
             Console.WriteLine(num2);
-            num3 -= 5;//num3= num3 - 5;
+            num3 -= 5; //num3 = num3-5
             Console.WriteLine(num3);
-            num4 *= 5;// num4 = num4*5;
-            Console.WriteLine(num4);
-            num5 /= num1;// num5= num5 / num1;
+            num4 += 5; //num4 = num4*5
+            Console.WriteLine(num5);
+            num5 /= num1; //num5 = num5/num1
             Console.WriteLine(num5);
 
             //Orden de evaluación operadores aritméticos
@@ -65,8 +64,8 @@
             Console.WriteLine($"F && V ={false && true}");
             Console.WriteLine($"F && F ={false && false}");
 
-            //Disyunción - OR - ||
-            Console.WriteLine("TABLA DE VERDAD CONJUNCIÓN");
+            //DISYUNCIÓN - OR - ||
+            Console.WriteLine("TABLA DE VERDAD DISYUNCIÓN");
             Console.WriteLine($"V || V ={true || true}");
             Console.WriteLine($"V || F ={true || false}");
             Console.WriteLine($"F || V ={false || true}");
@@ -77,8 +76,19 @@
             bool exp3 = exp1 && exp2;
             bool exp4 = !exp2;
             bool exp5 = !exp3 || exp4;
-            Console.WriteLine($"exp1={exp1}, exp2={exp2}, exp3={exp3}, expe4={exp4}, exp5={exp5}");
-            //Console.ReadKey();
+            Console.WriteLine($"exp1={exp1}, exp2={exp2}, exp3={exp3}, exp4={exp4}, exp5={exp5}");
+
+            //OPERADORES DE COMPARACIÓN
+            bool exp6 = 5 > 5; //true, false 
+            Console.WriteLine(exp6);
+            bool exp7 = 6 == 6; //Opeador de igualdad 
+            Console.WriteLine(exp7);
+            bool exp8 = 4 != 5; //Operador diferente a 
+            Console.WriteLine(exp8);
+            bool exp9 = 5 > 4 && 6 != 6;
+            Console.WriteLine(exp9);
+            bool exp10 = 10 > 9 || !exp9;
+            Console.WriteLine(exp10);
         }
     }
 }
