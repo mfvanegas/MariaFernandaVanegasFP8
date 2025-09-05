@@ -12,8 +12,17 @@
 
             while (mes <= 12)
             {
-               Console.WriteLine("Ingerese la cantidad que desa depositare en el mes")
+                Console.WriteLine($"Ingerese la cantidad depositada eb el mes {mes}:");
+                int deposito = Convert.ToInt32(Console.ReadLine());
+
+                totalahorrado += deposito;
+
+                Console.WriteLine($"En el mes {mes} lleva ahorrando: {totalahorrado}");
+
+                mes++;
             }
+
+            Console.WriteLine($"\nEl total ahorrado en el año es : {totalahorrado}");
         }
     }
 }
